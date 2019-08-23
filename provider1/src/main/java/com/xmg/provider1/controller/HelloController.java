@@ -27,7 +27,9 @@ public class HelloController {
             System.out.println("serviceInstance.getUri()>>>"+serviceInstance.getUri());
             System.out.println("serviceInstance.getServiceId()>>>"+serviceInstance.getServiceId());
             System.out.println("serviceInstance.getMetadata()>>>"+serviceInstance.getMetadata());
+            stringBuffer.append(serviceInstance.getHost()+serviceInstance.getPort()+serviceInstance.getUri()+
+                    serviceInstance.getServiceId()+serviceInstance.getMetadata());
         }
-        return null;
+        return stringBuffer.toString();
     }
 }
