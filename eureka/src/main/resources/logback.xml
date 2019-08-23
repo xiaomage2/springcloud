@@ -16,7 +16,7 @@
     <property name="app.env" value="${app.env:-dev}"/>
 
     <!-- 日志记录级别 -->
-    <property name="logback_level" value="${logback.level:-DEBUG}"/>
+    <property name="logback_level" value="${logback.level:-INFO}"/>
     <!-- 是否输出日志到文件 -->
     <property name="logback_rolling" value="${logback.rolling:-false}"/>
     <!-- 设置日志输出目录 -->
