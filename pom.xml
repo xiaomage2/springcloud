@@ -8,5 +8,10 @@
     <artifactId>springcloud</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
+    <!--模块化配置，配置完出现根节点-->
+    <modules>
+        <module>consumer</module>
+        <module>eureka</module>
+        <module>provider1</module>
+    </modules>
 </project>
