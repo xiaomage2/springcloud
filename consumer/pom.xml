@@ -49,6 +49,12 @@
             <artifactId>spring-cloud-starter-eureka-server</artifactId>
         </dependency>
 
+        <!--负载均衡器-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-ribbon</artifactId>
+        </dependency>
+
         <!--日志文件管理包，提高性能log输出性能，logback 也依赖janino -->
         <dependency>
             <groupId>org.codehaus.janino</groupId>
