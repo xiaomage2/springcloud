@@ -2,12 +2,14 @@ package com.xmg.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-@EnableEurekaClient
+@EnableCircuitBreaker //Hystriix  熔断机制，开启断路器 或者使用 @SpringCloudApplication  可以包含以下三个注解
+@EnableEurekaClient //或者EnableDiscoveryClient 这个可以注册到其他的 服务中心
 @SpringBootApplication
 public class ConsumerApplication {
 
