@@ -23,8 +23,11 @@ public class HelloServiceImpl implements HelloService {
         return responseEntity.getBody();
     }
 
+
+    //Throwable 异常（可以不加的）
     //服务降级
-    public String error()
+    @HystrixCommand(fallbackMethod = "error2")
+    public String error(Throwable throwable)
     {
         return "hello,这是本地预设的一个数据！";
     }
