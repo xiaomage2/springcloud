@@ -11,8 +11,8 @@ import java.util.List;
 @org.apache.ibatis.annotations.Mapper
 public interface ScenceMapper extends Mapper<ScenceEntity> {
     List<ScenceEntity> queryScence(@Param("clientid") String clientid, @Param("paramKey") String paramKey);
-  /*  int  add(ScenceEntity scenceEntity);
-
+   int  add(ScenceEntity scenceEntity);
+/*
     int  deleteById(Long id);
 
     int  update(ScenceEntity scenceEntity);

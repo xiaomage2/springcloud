@@ -19,4 +19,13 @@ public class ScenceController {
         return scenceService.getAll();
     }
 
+    @RequestMapping("/addScence")
+    public int addScence()
+    {
+        ScenceEntity scenceEntity = new ScenceEntity();
+        scenceEntity.setId(100);
+        scenceEntity.setName("hhhhhhhh");
+        return scenceService.addScence(scenceEntity);
+    }
+
 }

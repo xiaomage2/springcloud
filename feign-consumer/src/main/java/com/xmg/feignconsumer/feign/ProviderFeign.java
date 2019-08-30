@@ -7,4 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface ProviderFeign {
     @RequestMapping("/hello")
     String  hello();
+
+    @RequestMapping("/addScence")
+    int  addScence();
 }

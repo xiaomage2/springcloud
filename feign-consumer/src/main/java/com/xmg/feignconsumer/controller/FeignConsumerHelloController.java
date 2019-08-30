@@ -18,4 +18,10 @@ public class FeignConsumerHelloController {
     {
         return providerFeign.hello();
     }
+
+    @RequestMapping("/addScence")
+    public int addScence()
+    {
+        return providerFeign.addScence();
+    }
 }

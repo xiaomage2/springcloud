@@ -25,4 +25,7 @@
         SELECT * FROM scence
     </select>
 
+    <insert id="add" >
+        insert  into  scence(id,name) values (#{id},#{name})
+    </insert>
 </mapper>

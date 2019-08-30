@@ -7,4 +7,5 @@ import java.util.List;
 public interface ScenceService {
 
     List<ScenceEntity> getAll();
+    int addScence(ScenceEntity scenceEntity);
 }

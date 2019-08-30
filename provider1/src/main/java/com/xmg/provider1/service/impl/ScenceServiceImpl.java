@@ -17,4 +17,11 @@ public class ScenceServiceImpl implements ScenceService {
     public List<ScenceEntity> getAll() {
         return scenceMapper.getAll();
     }
+
+    @Override
+    public int addScence(ScenceEntity scenceEntity) {
+        return scenceMapper.add(scenceEntity);
+    }
+
+
 }
